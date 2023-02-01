@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "SolaimanLipi";
+  src: url("SolaimanLipi-Normal.eot");
+  src: url("SolaimanLipi-Normal.eot?#iefix") format("embedded-opentype"),
+    url("SolaimanLipi-Normal.woff2") format("woff2"),
+    url("SolaimanLipi-Normal.woff") format("woff"),
+    url("SolaimanLipi-Normal.ttf") format("truetype"),
+    url("SolaimanLipi-Normal.svg#SolaimanLipi-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SolaimanLipiBold";
+  src: url("SolaimanLipi.eot");
+  src: url("SolaimanLipi.eot?#iefix") format("embedded-opentype"),
+    url("SolaimanLipi.woff2") format("woff2"),
+    url("SolaimanLipi.woff") format("woff"),
+    url("SolaimanLipi.ttf") format("truetype"),
+    url("SolaimanLipi.svg#SolaimanLipi") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SolaimanLipiThin";
+  src: url("SolaimanLipi_1.eot");
+  src: url("SolaimanLipi_1.eot?#iefix") format("embedded-opentype"),
+    url("SolaimanLipi_1.woff2") format("woff2"),
+    url("SolaimanLipi_1.woff") format("woff"),
+    url("SolaimanLipi_1.ttf") format("truetype"),
+    url("SolaimanLipi_1.svg#SolaimanLipi") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
