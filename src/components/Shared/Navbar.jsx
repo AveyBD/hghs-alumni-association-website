@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "./../../assets/logo-dark.png";
 
 const Navbar = () => {
@@ -13,7 +14,8 @@ const Navbar = () => {
             className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
             role="navigation"
           >
-            <a
+            <Link
+              to={"/"}
               id="HGHS Alumni"
               aria-label="HGHS Alumni logo"
               aria-current="page"
@@ -21,7 +23,7 @@ const Navbar = () => {
               href="javascript:void(0)"
             >
               <img src={logo} className="w-96" />
-            </a>
+            </Link>
             <button
               className={`relative order-10 block h-10 w-10 self-center lg:hidden
                 ${
