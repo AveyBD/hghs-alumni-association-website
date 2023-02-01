@@ -107,9 +107,12 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
-              <button className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-red-900 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-red-200 transition duration-300 hover:bg-red-800 hover:shadow-sm hover:shadow-red-200 focus:bg-red-700 focus:shadow-sm focus:shadow-red-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300 disabled:shadow-none">
-                <span>Alumni Area</span>
-              </button>
+              <Link to={"/login"}>
+                {" "}
+                <button className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-red-900 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-red-200 transition duration-300 hover:bg-red-800 hover:shadow-sm hover:shadow-red-200 focus:bg-red-700 focus:shadow-sm focus:shadow-red-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-red-300 disabled:bg-red-300 disabled:shadow-none">
+                  <span>Alumni Area</span>
+                </button>
+              </Link>
             </div>
           </nav>
         </div>
