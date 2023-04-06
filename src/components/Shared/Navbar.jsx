@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../../assets/logo-dark.png";
+import { Helmet } from "react-helmet";
 
 const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
 
   return (
     <>
+      <Helmet>
+        <script
+          src="https://cdn.gtranslate.net/widgets/latest/popup.js"
+          defer
+        ></script>
+      </Helmet>
       <header className="border-b-1 md:fixed relative z-20 w-full border-b border-slate-200  shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
