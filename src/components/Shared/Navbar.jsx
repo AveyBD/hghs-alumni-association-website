@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../../assets/logo-dark.png";
 import { Helmet } from "react-helmet";
+import DropdownBasic from "./NewNav";
 
 const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -100,6 +101,9 @@ const Navbar = () => {
                 >
                   <span>About</span>
                 </a>
+              </li>
+              <li>
+                <DropdownBasic className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-900 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8" />
               </li>
               <li role="none" className="flex items-stretch">
                 <a
